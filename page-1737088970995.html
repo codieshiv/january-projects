@@ -1,0 +1,1216 @@
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="AI-generated website">
+      <meta name="theme-color" content="#ffffff">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="robots" content="index, follow">
+      
+      <!-- Performance optimization: Preload critical resources -->
+      <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
+      <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" as="style">
+      
+      <!-- {headerScripts} -->
+
+      <!-- Core CSS -->
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+             colors: {
+                primary: {
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+                secondary: {
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+                accent: {
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+              },
+              fontFamily: {
+                sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+                heading: ['Montserrat', 'Inter', 'system-ui', 'sans-serif'],
+              },
+              spacing: {
+                '18': '4.5rem',
+                '22': '5.5rem',
+                '30': '7.5rem',
+              },
+              maxWidth: {
+                '8xl': '88rem',
+                '9xl': '96rem',
+              },
+              animation: {
+                'fade-in': 'fadeIn 0.5s ease-in',
+                'fade-out': 'fadeOut 0.5s ease-out',
+                'slide-up': 'slideUp 0.5s ease-out',
+                'slide-down': 'slideDown 0.5s ease-out',
+                'slide-left': 'slideLeft 0.5s ease-out',
+                'slide-right': 'slideRight 0.5s ease-out',
+                'scale-in': 'scaleIn 0.5s ease-out',
+                'scale-out': 'scaleOut 0.5s ease-out',
+                'spin-slow': 'spin 3s linear infinite',
+                'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                'bounce-slow': 'bounce 3s infinite',
+                'float': 'float 3s ease-in-out infinite',
+              },
+              keyframes: {
+                fadeIn: {
+                  '0%': { opacity: '0' },
+                  '100%': { opacity: '1' },
+                },
+                fadeOut: {
+                  '0%': { opacity: '1' },
+                  '100%': { opacity: '0' },
+                },
+                slideUp: {
+                  '0%': { transform: 'translateY(20px)', opacity: '0' },
+                  '100%': { transform: 'translateY(0)', opacity: '1' },
+                },
+                slideDown: {
+                  '0%': { transform: 'translateY(-20px)', opacity: '0' },
+                  '100%': { transform: 'translateY(0)', opacity: '1' },
+                },
+                slideLeft: {
+                  '0%': { transform: 'translateX(20px)', opacity: '0' },
+                  '100%': { transform: 'translateX(0)', opacity: '1' },
+                },
+                slideRight: {
+                  '0%': { transform: 'translateX(-20px)', opacity: '0' },
+                  '100%': { transform: 'translateX(0)', opacity: '1' },
+                },
+                scaleIn: {
+                  '0%': { transform: 'scale(0.9)', opacity: '0' },
+                  '100%': { transform: 'scale(1)', opacity: '1' },
+                },
+                scaleOut: {
+                  '0%': { transform: 'scale(1.1)', opacity: '0' },
+                  '100%': { transform: 'scale(1)', opacity: '1' },
+                },
+                float: {
+                  '0%, 100%': { transform: 'translateY(0)' },
+                  '50%': { transform: 'translateY(-10px)' },
+                },
+              },
+              aspectRatio: {
+                'portrait': '3/4',
+                'landscape': '4/3',
+                'ultrawide': '21/9',
+              },
+            },
+          },
+          variants: {
+            extend: {
+              opacity: ['disabled'],
+              cursor: ['disabled'],
+              backgroundColor: ['active', 'disabled'],
+              textColor: ['active', 'disabled'],
+            },
+          },
+        }
+      </script>
+
+      <!-- Utilities and Components -->
+      <script defer src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.13.3/cdn.min.js"></script>
+      <script defer src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.45.1/apexcharts.min.js"></script>
+      
+      <!-- Optimized Font Loading -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+      
+      <!-- Icons -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+      <!-- Base Styles -->
+      <style>
+
+      * {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+/* Webkit browsers like Chrome, Safari, newer Edge */
+*::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+          width: 0px;
+        }
+        
+        ::-webkit-scrollbar-track {
+          background: #f1f1f1;
+          border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+          background: #888;
+          border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+          background: #666;
+        }
+
+        /* Remove tap highlight on mobile */
+        * {
+          -webkit-tap-highlight-color: transparent;
+        }
+
+        /* Improve text rendering */
+        body {
+          text-rendering: optimizeLegibility;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Focus outline styles */
+        :focus-visible {
+          outline: 2px solid currentColor;
+          outline-offset: 2px;
+        }
+
+        /* Print styles */
+        @media print {
+          .no-print {
+            display: none !important;
+          }
+          
+          a[href]:after {
+            content: " (" attr(href) ")";
+          }
+        }
+      </style>
+
+      <!-- Enhanced Image Handler -->
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const imageObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                const img = entry.target;
+                if (img.dataset.src) {
+                  const tempImage = new Image();
+                  tempImage.onload = () => {
+                    img.src = img.dataset.src;
+                    img.classList.remove('opacity-0');
+                    img.classList.add('opacity-100');
+                  };
+                  tempImage.src = img.dataset.src;
+                  img.removeAttribute('data-src');
+                  observer.unobserve(img);
+                }
+              }
+            });
+          }, {
+            rootMargin: '50px 0px',
+            threshold: 0.01
+          });
+
+          const loadImage = (img) => {
+            if ('loading' in HTMLImageElement.prototype) {
+              img.loading = 'lazy';
+            }
+            
+            img.classList.add('transition-opacity', 'duration-300', 'opacity-0');
+            
+            img.onerror = () => {
+              const width = img.getAttribute('width') || img.clientWidth || 300;
+              const height = img.getAttribute('height') || img.clientHeight || 200;
+              img.src = `https://placehold.co/${width}x${height}/DEDEDE/555555?text=Image+Unavailable`;
+              img.alt = 'Image unavailable';
+              img.classList.remove('opacity-0');
+              img.classList.add('opacity-100', 'error-image');
+            };
+
+            if (img.dataset.src) {
+              imageObserver.observe(img);
+            } else {
+              img.classList.remove('opacity-0');
+              img.classList.add('opacity-100');
+            }
+          };
+
+          document.querySelectorAll('img[data-src], img:not([data-src])').forEach(loadImage);
+
+          // Watch for dynamically added images
+          new MutationObserver((mutations) => {
+            mutations.forEach(mutation => {
+              mutation.addedNodes.forEach(node => {
+                if (node.nodeType === 1) {
+                  if (node.tagName === 'IMG') {
+                    loadImage(node);
+                  }
+                  node.querySelectorAll('img').forEach(loadImage);
+                }
+              });
+            });
+          }).observe(document.body, {
+            childList: true,
+            subtree: true
+          });
+        });
+
+        // Performance monitoring
+        if ('performance' in window && 'PerformanceObserver' in window) {
+          // Create performance observer
+          const observer = new PerformanceObserver((list) => {
+            const entries = list.getEntries();
+            entries.forEach((entry) => {
+              if (entry.entryType === 'largest-contentful-paint') {
+                // console.log(`LCP: ${entry.startTime}ms`);
+              }
+              if (entry.entryType === 'first-input') {
+                // console.log(`FID: ${entry.processingStart - entry.startTime}ms`);
+              }
+              if (entry.entryType === 'layout-shift') {
+                // console.log(`CLS: ${entry.value}`);
+              }
+            });
+          });
+
+          // Observe performance metrics
+          observer.observe({ entryTypes: ['largest-contentful-paint', 'first-input', 'layout-shift'] });
+
+          // Log basic performance metrics
+          window.addEventListener('load', () => {
+            const timing = performance.getEntriesByType('navigation')[0];
+            console.log({
+              'DNS Lookup': timing.domainLookupEnd - timing.domainLookupStart,
+              'TCP Connection': timing.connectEnd - timing.connectStart,
+              'DOM Content Loaded': timing.domContentLoadedEventEnd - timing.navigationStart,
+              'Page Load': timing.loadEventEnd - timing.navigationStart
+            });
+          });
+        }
+
+        // Handle offline/online status
+        window.addEventListener('online', () => {
+          document.body.classList.remove('offline');
+          console.log('Connection restored');
+        });
+        
+        window.addEventListener('offline', () => {
+          document.body.classList.add('offline');
+          console.log('Connection lost');
+        });
+      </script>
+   </head>
+   <body class="antialiased text-gray-800 min-h-screen flex flex-col">
+      <!-- Skip to main content link for accessibility -->
+      <a href="#main-content" 
+         class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:p-4 focus:bg-white focus:text-black">
+         Skip to main content
+      </a>
+
+      <!-- Header -->
+      <header class="relative z-50 bg-white dark:bg-gray-900">
+        <!-- Header content goes here -->
+      </header>
+
+      <!-- Main content area -->
+      <main id="main-content" class="flex-1 relative ">
+        <!-- Content will be injected here -->
+      </main>
+
+      <!-- {bodyScripts} -->
+
+   </body>
+</html><element id="0b9cd089-4f78-4862-afb1-52a71c30ea6b" data-section-id="0b9cd089-4f78-4862-afb1-52a71c30ea6b">
+
+<htmlCode>
+<div id="root">
+  <nav id="navbar" class="fixed w-full z-50 bg-neutral-900/90 backdrop-blur-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <div class="flex items-center">
+          <div class="text-xl font-bold text-white">DesignPro</div>
+        </div>
+        <div class="hidden md:block">
+          <div class="ml-10 flex items-baseline space-x-4">
+            <a href="#hero" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
+            <a href="#services" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Services</a>
+            <a href="#portfolio" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Portfolio</a>
+            <a href="#process" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Process</a>
+            <a href="#testimonials" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Testimonials</a>
+            <a href="#pricing" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Pricing</a>
+            <a href="#contact" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+          </div>
+        </div>
+        <div class="md:hidden">
+          <button id="menuBtn" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-neutral-800 focus:outline-none">
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path id="menuIcon" class="block" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              <path id="closeIcon" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden bg-neutral-900/90 backdrop-blur-sm">
+      <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <a href="#hero" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
+        <a href="#services" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Services</a>
+        <a href="#portfolio" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Portfolio</a>
+        <a href="#process" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Process</a>
+        <a href="#testimonials" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Testimonials</a>
+        <a href="#pricing" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Pricing</a>
+        <a href="#contact" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <script>
+    document.getElementById('menuBtn').addEventListener('click', function() {
+      const mobileMenu = document.getElementById('mobileMenu');
+      const menuIcon = document.getElementById('menuIcon');
+      const closeIcon = document.getElementById('closeIcon');
+      
+      if (mobileMenu.classList.contains('hidden')) {
+        mobileMenu.classList.remove('hidden');
+        menuIcon.classList.add('hidden');
+        closeIcon.classList.remove('hidden');
+      } else {
+        mobileMenu.classList.add('hidden');
+        menuIcon.classList.remove('hidden');
+        closeIcon.classList.add('hidden');
+      }
+    });
+  </script>
+</div>
+</htmlCode></element><element id="19dbe302-e99a-453a-9119-5bf5b7eddd5c" data-section-id="19dbe302-e99a-453a-9119-5bf5b7eddd5c">
+
+<htmlCode>
+<div id="root">
+  <section id="hero" class="min-h-screen pt-16 bg-neutral-900 relative overflow-hidden">
+    <!-- Gradient Background Effect -->
+    <div class="absolute inset-0 bg-gradient-to-br from-purple-900/20 via-neutral-900 to-neutral-900"></div>
+    
+    <!-- Animated Particles -->
+    <div class="absolute inset-0">
+      <div class="animate__animated animate__fadeIn absolute w-40 h-40 bg-purple-500/10 rounded-full blur-3xl top-20 left-20"></div>
+      <div class="animate__animated animate__fadeIn absolute w-40 h-40 bg-blue-500/10 rounded-full blur-3xl bottom-20 right-20"></div>
+    </div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-16">
+      <div class="text-center">
+        <h1 class="animate__animated animate__fadeInUp text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
+          I Don't Just Design Websites—<br/>
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-500">
+            I Design Possibilities.
+          </span>
+        </h1>
+        
+        <p class="animate__animated animate__fadeInUp animate__delay-1s text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto">
+          Your Business's Last Chance to Stand Out—and Thrive.
+        </p>
+
+        <div class="animate__animated animate__fadeInUp animate__delay-2s grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto mb-12">
+          <div class="p-6 bg-neutral-800/50 backdrop-blur-sm rounded-xl hover:transform hover:-translate-y-1 transition-all">
+            <div class="text-3xl mb-4">🚀</div>
+            <h3 class="text-white font-semibold mb-2">Strategic Design</h3>
+            <p class="text-gray-400">Websites that drive sales up by 3%-5%</p>
+          </div>
+
+          <div class="p-6 bg-neutral-800/50 backdrop-blur-sm rounded-xl hover:transform hover:-translate-y-1 transition-all">
+            <div class="text-3xl mb-4">🎯</div>
+            <h3 class="text-white font-semibold mb-2">Tailored Solutions</h3>
+            <p class="text-gray-400">Built on deep research and flawless execution</p>
+          </div>
+
+          <div class="p-6 bg-neutral-800/50 backdrop-blur-sm rounded-xl hover:transform hover:-translate-y-1 transition-all">
+            <div class="text-3xl mb-4">🔧</div>
+            <h3 class="text-white font-semibold mb-2">Full Integration</h3>
+            <p class="text-gray-400">Payment gateways, SEO, and more</p>
+          </div>
+
+          <div class="p-6 bg-neutral-800/50 backdrop-blur-sm rounded-xl hover:transform hover:-translate-y-1 transition-all">
+            <div class="text-3xl mb-4">✨</div>
+            <h3 class="text-white font-semibold mb-2">Transformations</h3>
+            <p class="text-gray-400">Better, faster, and more effective</p>
+          </div>
+        </div>
+
+        <div class="animate__animated animate__fadeInUp animate__delay-3s">
+          <a href="#contact" class="inline-block px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-600 text-white font-bold rounded-full hover:scale-105 transition-all duration-300 shadow-lg shadow-purple-500/25">
+            Let's Make It Happen—Hire Me Today!
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mouse Scroll Indicator -->
+    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+      <svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+      </svg>
+    </div>
+  </section>
+</div>
+</htmlCode></element><element id="7d57fb0e-52b7-4e9d-812f-8dfcdd807a7b" data-section-id="7d57fb0e-52b7-4e9d-812f-8dfcdd807a7b">
+
+<htmlCode>
+<div id="root">
+  <section id="services" class="py-20 bg-neutral-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Section Header -->
+      <div class="text-center mb-16">
+        <h2 class="animate__animated animate__fadeIn text-4xl font-bold text-neutral-800 mb-4">
+          Comprehensive Web Solutions
+        </h2>
+        <p class="text-lg text-neutral-600 max-w-2xl mx-auto">
+          Transform your online presence with our expert web design and development services
+        </p>
+      </div>
+
+      <!-- Services Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Service Card 1 -->
+        <div class="animate__animated animate__fadeInUp bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all group">
+          <div class="bg-purple-100 rounded-xl p-4 inline-block mb-6 group-hover:scale-110 transition-transform">
+            <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-neutral-800 mb-4">Strategic Web Design</h3>
+          <ul class="space-y-3 text-neutral-600">
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              Conversion-focused layouts
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              User experience optimization
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              3-5% sales increase guarantee
+            </li>
+          </ul>
+        </div>
+
+        <!-- Service Card 2 -->
+        <div class="animate__animated animate__fadeInUp animate__delay-1s bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all group">
+          <div class="bg-blue-100 rounded-xl p-4 inline-block mb-6 group-hover:scale-110 transition-transform">
+            <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-neutral-800 mb-4">Full Integration</h3>
+          <ul class="space-y-3 text-neutral-600">
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              Payment gateway setup
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              SEO optimization
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              Analytics integration
+            </li>
+          </ul>
+        </div>
+
+        <!-- Service Card 3 -->
+        <div class="animate__animated animate__fadeInUp animate__delay-2s bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all group">
+          <div class="bg-green-100 rounded-xl p-4 inline-block mb-6 group-hover:scale-110 transition-transform">
+            <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-neutral-800 mb-4">Website Transformation</h3>
+          <ul class="space-y-3 text-neutral-600">
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              Performance optimization
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              Modern redesigns
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              Mobile optimization
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+</htmlCode></element><element id="e07d0508-1a06-4c83-8e72-4e79045d1522" data-section-id="e07d0508-1a06-4c83-8e72-4e79045d1522">
+
+<htmlCode>
+<div id="root">
+  <section id="portfolio" class="py-20 bg-neutral-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Section Header -->
+      <div class="text-center mb-16">
+        <h2 class="animate__animated animate__fadeIn text-4xl font-bold text-white mb-4">
+          Featured Projects
+        </h2>
+        <p class="text-lg text-gray-400 max-w-2xl mx-auto">
+          Transformative designs that deliver measurable results
+        </p>
+      </div>
+
+      <!-- Portfolio Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Portfolio Item 1 -->
+        <div class="animate__animated animate__fadeInUp group">
+          <div class="relative overflow-hidden rounded-xl bg-neutral-800 p-4">
+            <div class="h-64 bg-neutral-700 rounded-lg flex items-center justify-center">
+              <div class="text-6xl">🎨</div>
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-t from-neutral-900 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+              <div class="p-6">
+                <h3 class="text-xl font-bold text-white mb-2">E-Commerce Redesign</h3>
+                <p class="text-gray-300 mb-4">Sales increased by 4.2% after redesign</p>
+                <button class="px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors">
+                  View Details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Portfolio Item 2 -->
+        <div class="animate__animated animate__fadeInUp animate__delay-1s group">
+          <div class="relative overflow-hidden rounded-xl bg-neutral-800 p-4">
+            <div class="h-64 bg-neutral-700 rounded-lg flex items-center justify-center">
+              <div class="text-6xl">💼</div>
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-t from-neutral-900 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+              <div class="p-6">
+                <h3 class="text-xl font-bold text-white mb-2">SaaS Platform</h3>
+                <p class="text-gray-300 mb-4">Full integration with payment systems</p>
+                <button class="px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors">
+                  View Details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Portfolio Item 3 -->
+        <div class="animate__animated animate__fadeInUp animate__delay-2s group">
+          <div class="relative overflow-hidden rounded-xl bg-neutral-800 p-4">
+            <div class="h-64 bg-neutral-700 rounded-lg flex items-center justify-center">
+              <div class="text-6xl">🚀</div>
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-t from-neutral-900 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+              <div class="p-6">
+                <h3 class="text-xl font-bold text-white mb-2">Startup Landing Page</h3>
+                <p class="text-gray-300 mb-4">Conversion rate increased by 3.8%</p>
+                <button class="px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors">
+                  View Details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- View More Button -->
+      <div class="text-center mt-12">
+        <button class="animate__animated animate__fadeInUp animate__delay-3s px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-600 text-white font-bold rounded-full hover:scale-105 transition-all duration-300 shadow-lg shadow-purple-500/25">
+          View More Projects
+        </button>
+      </div>
+    </div>
+  </section>
+</div>
+</htmlCode></element><element id="0fbf3dc5-9c70-4d16-b6d7-611f6f028ea6" data-section-id="0fbf3dc5-9c70-4d16-b6d7-611f6f028ea6">
+
+<htmlCode>
+<div id="root">
+  <section id="process" class="py-20 bg-neutral-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Section Header -->
+      <div class="text-center mb-16">
+        <h2 class="animate__animated animate__fadeIn text-4xl font-bold text-neutral-800 mb-4">
+          How We Work Together
+        </h2>
+        <p class="text-lg text-neutral-600 max-w-2xl mx-auto">
+          A proven process that delivers results consistently
+        </p>
+      </div>
+
+      <!-- Process Timeline -->
+      <div class="relative">
+        <!-- Timeline Line -->
+        <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-purple-200"></div>
+
+        <!-- Process Steps -->
+        <div class="space-y-12">
+          <!-- Step 1 -->
+          <div class="animate__animated animate__fadeInLeft relative flex md:flex-row flex-col items-center md:space-x-8">
+            <div class="md:w-1/2 flex md:justify-end mb-8 md:mb-0">
+              <div class="bg-white p-6 rounded-xl shadow-lg max-w-md">
+                <div class="text-3xl mb-4">📋</div>
+                <h3 class="text-xl font-bold text-neutral-800 mb-3">1. Discovery & Research</h3>
+                <p class="text-neutral-600">Deep dive into your business goals, target audience, and competitive landscape to create a strategic foundation.</p>
+              </div>
+            </div>
+            <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-8 h-8 bg-purple-500 rounded-full border-4 border-white"></div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="animate__animated animate__fadeInRight relative flex md:flex-row flex-col items-center md:space-x-8">
+            <div class="md:w-1/2 md:hidden mb-8">
+              <div class="bg-white p-6 rounded-xl shadow-lg max-w-md ml-auto">
+                <div class="text-3xl mb-4">🎨</div>
+                <h3 class="text-xl font-bold text-neutral-800 mb-3">2. Design & Planning</h3>
+                <p class="text-neutral-600">Creating wireframes and visual designs that align with your brand and conversion goals.</p>
+              </div>
+            </div>
+            <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-8 h-8 bg-purple-500 rounded-full border-4 border-white"></div>
+            <div class="md:w-1/2 hidden md:block">
+              <div class="bg-white p-6 rounded-xl shadow-lg max-w-md">
+                <div class="text-3xl mb-4">🎨</div>
+                <h3 class="text-xl font-bold text-neutral-800 mb-3">2. Design & Planning</h3>
+                <p class="text-neutral-600">Creating wireframes and visual designs that align with your brand and conversion goals.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="animate__animated animate__fadeInLeft relative flex md:flex-row flex-col items-center md:space-x-8">
+            <div class="md:w-1/2 flex md:justify-end mb-8 md:mb-0">
+              <div class="bg-white p-6 rounded-xl shadow-lg max-w-md">
+                <div class="text-3xl mb-4">💻</div>
+                <h3 class="text-xl font-bold text-neutral-800 mb-3">3. Development</h3>
+                <p class="text-neutral-600">Bringing designs to life with clean, efficient code and full integration of all required features.</p>
+              </div>
+            </div>
+            <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-8 h-8 bg-purple-500 rounded-full border-4 border-white"></div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="animate__animated animate__fadeInRight relative flex md:flex-row flex-col items-center md:space-x-8">
+            <div class="md:w-1/2 md:hidden mb-8">
+              <div class="bg-white p-6 rounded-xl shadow-lg max-w-md ml-auto">
+                <div class="text-3xl mb-4">🚀</div>
+                <h3 class="text-xl font-bold text-neutral-800 mb-3">4. Launch & Optimize</h3>
+                <p class="text-neutral-600">Thorough testing, deployment, and continuous optimization to ensure peak performance.</p>
+              </div>
+            </div>
+            <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-8 h-8 bg-purple-500 rounded-full border-4 border-white"></div>
+            <div class="md:w-1/2 hidden md:block">
+              <div class="bg-white p-6 rounded-xl shadow-lg max-w-md">
+                <div class="text-3xl mb-4">🚀</div>
+                <h3 class="text-xl font-bold text-neutral-800 mb-3">4. Launch & Optimize</h3>
+                <p class="text-neutral-600">Thorough testing, deployment, and continuous optimization to ensure peak performance.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+</htmlCode></element><element id="8975faab-c748-4c30-b194-3fbe9ac17a06" data-section-id="8975faab-c748-4c30-b194-3fbe9ac17a06">
+
+<htmlCode>
+<div id="root">
+  <section id="testimonials" class="py-20 bg-neutral-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Section Header -->
+      <div class="text-center mb-16">
+        <h2 class="animate__animated animate__fadeIn text-4xl font-bold text-white mb-4">
+          Client Success Stories
+        </h2>
+        <p class="text-lg text-gray-400 max-w-2xl mx-auto">
+          Real results from real businesses
+        </p>
+      </div>
+
+      <!-- Testimonials Slider -->
+      <div class="testimonials-slider relative">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <!-- Testimonial 1 -->
+            <div class="swiper-slide">
+              <div class="bg-neutral-800 rounded-2xl p-8 h-full">
+                <div class="flex items-center mb-6">
+                  <div class="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold text-xl">
+                    J
+                  </div>
+                  <div class="ml-4">
+                    <h4 class="text-white font-semibold">John Smith</h4>
+                    <p class="text-gray-400">CEO, Tech Startup</p>
+                  </div>
+                </div>
+                <div class="mb-6">
+                  <div class="flex text-yellow-400 mb-2">
+                    ★★★★★
+                  </div>
+                </div>
+                <p class="text-gray-300">
+                  "The website redesign increased our conversion rate by 4.2%. The attention to detail and strategic approach made all the difference."
+                </p>
+              </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="swiper-slide">
+              <div class="bg-neutral-800 rounded-2xl p-8 h-full">
+                <div class="flex items-center mb-6">
+                  <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-xl">
+                    S
+                  </div>
+                  <div class="ml-4">
+                    <h4 class="text-white font-semibold">Sarah Johnson</h4>
+                    <p class="text-gray-400">E-commerce Owner</p>
+                  </div>
+                </div>
+                <div class="mb-6">
+                  <div class="flex text-yellow-400 mb-2">
+                    ★★★★★
+                  </div>
+                </div>
+                <p class="text-gray-300">
+                  "The integrated payment solution and SEO optimization helped us achieve a 3.8% increase in sales within the first month."
+                </p>
+              </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="swiper-slide">
+              <div class="bg-neutral-800 rounded-2xl p-8 h-full">
+                <div class="flex items-center mb-6">
+                  <div class="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center text-white font-bold text-xl">
+                    M
+                  </div>
+                  <div class="ml-4">
+                    <h4 class="text-white font-semibold">Mike Wilson</h4>
+                    <p class="text-gray-400">Marketing Director</p>
+                  </div>
+                </div>
+                <div class="mb-6">
+                  <div class="flex text-yellow-400 mb-2">
+                    ★★★★★
+                  </div>
+                </div>
+                <p class="text-gray-300">
+                  "The website transformation was exactly what we needed. Load times improved by 65% and user engagement doubled."
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Navigation Buttons -->
+        <button class="absolute top-1/2 -left-4 transform -translate-y-1/2 bg-white p-3 rounded-full shadow-lg hover:scale-110 transition-transform z-10 prev-button">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+          </svg>
+        </button>
+        <button class="absolute top-1/2 -right-4 transform -translate-y-1/2 bg-white p-3 rounded-full shadow-lg hover:scale-110 transition-transform z-10 next-button">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      autoplay: {
+        delay: 5000,
+      },
+      navigation: {
+        nextEl: '.next-button',
+        prevEl: '.prev-button',
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 3,
+        },
+      },
+    });
+  </script>
+</div>
+</htmlCode></element><element id="de486f2b-5867-4c89-8262-02820697fb2a" data-section-id="de486f2b-5867-4c89-8262-02820697fb2a">
+
+<htmlCode>
+<div id="root">
+  <section id="pricing" class="py-20 bg-neutral-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Section Header -->
+      <div class="text-center mb-16">
+        <h2 class="animate__animated animate__fadeIn text-4xl font-bold text-neutral-800 mb-4">
+          Investment Plans
+        </h2>
+        <p class="text-lg text-neutral-600 max-w-2xl mx-auto">
+          Choose the perfect package for your business needs
+        </p>
+      </div>
+
+      <!-- Pricing Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Basic Plan -->
+        <div class="animate__animated animate__fadeInUp bg-white rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300">
+          <div class="p-8">
+            <h3 class="text-2xl font-bold text-neutral-800 mb-4">Basic</h3>
+            <div class="flex items-baseline mb-8">
+              <span class="text-4xl font-bold text-neutral-800">$999</span>
+              <span class="text-neutral-600 ml-2">/project</span>
+            </div>
+            <ul class="space-y-4 mb-8">
+              <li class="flex items-center text-neutral-600">
+                <svg class="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                </svg>
+                5-Page Website Design
+              </li>
+              <li class="flex items-center text-neutral-600">
+                <svg class="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                </svg>
+                Mobile Responsive
+              </li>
+              <li class="flex items-center text-neutral-600">
+                <svg class="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                </svg>
+                Basic SEO Setup
+              </li>
+            </ul>
+            <a href="#contact" class="block w-full py-3 px-6 text-center bg-neutral-800 text-white rounded-lg hover:bg-neutral-700 transition-colors">
+              Get Started
+            </a>
+          </div>
+        </div>
+
+        <!-- Professional Plan -->
+        <div class="animate__animated animate__fadeInUp animate__delay-1s transform scale-105 bg-gradient-to-br from-purple-600 to-blue-600 rounded-2xl shadow-xl overflow-hidden">
+          <div class="p-8">
+            <div class="absolute top-4 right-4">
+              <span class="bg-white px-3 py-1 rounded-full text-sm font-semibold text-purple-600">Popular</span>
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-4">Professional</h3>
+            <div class="flex items-baseline mb-8">
+              <span class="text-4xl font-bold text-white">$1,999</span>
+              <span class="text-white/80 ml-2">/project</span>
+            </div>
+            <ul class="space-y-4 mb-8">
+              <li class="flex items-center text-white">
+                <svg class="w-5 h-5 text-white mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                </svg>
+                10-Page Custom Design
+              </li>
+              <li class="flex items-center text-white">
+                <svg class="w-5 h-5 text-white mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                </svg>
+                Advanced SEO Package
+              </li>
+              <li class="flex items-center text-white">
+                <svg class="w-5 h-5 text-white mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                </svg>
+                Payment Integration
+              </li>
+              <li class="flex items-center text-white">
+                <svg class="w-5 h-5 text-white mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                </svg>
+                Custom Animations
+              </li>
+            </ul>
+            <a href="#contact" class="block w-full py-3 px-6 text-center bg-white text-purple-600 rounded-lg hover:bg-gray-50 transition-colors">
+              Get Started
+            </a>
+          </div>
+        </div>
+
+        <!-- Enterprise Plan -->
+        <div class="animate__animated animate__fadeInUp animate__delay-2s bg-white rounded-2xl shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300">
+          <div class="p-8">
+            <h3 class="text-2xl font-bold text-neutral-800 mb-4">Enterprise</h3>
+            <div class="flex items-baseline mb-8">
+              <span class="text-4xl font-bold text-neutral-800">$3,999</span>
+              <span class="text-neutral-600 ml-2">/project</span>
+            </div>
+            <ul class="space-y-4 mb-8">
+              <li class="flex items-center text-neutral-600">
+                <svg class="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                </svg>
+                Unlimited Pages
+              </li>
+              <li class="flex items-center text-neutral-600">
+                <svg class="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                </svg>
+                Full E-commerce Setup
+              </li>
+              <li class="flex items-center text-neutral-600">
+                <svg class="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                </svg>
+                Custom Features
+              </li>
+              <li class="flex items-center text-neutral-600">
+                <svg class="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                </svg>
+                Priority Support
+              </li>
+            </ul>
+            <a href="#contact" class="block w-full py-3 px-6 text-center bg-neutral-800 text-white rounded-lg hover:bg-neutral-700 transition-colors">
+              Get Started
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+</htmlCode></element><element id="397800df-2e08-4070-90de-19d26dea1c79" data-section-id="397800df-2e08-4070-90de-19d26dea1c79">
+
+<htmlCode>
+<div id="root">
+  <section id="contact" class="py-20 bg-neutral-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+        <!-- Contact Info -->
+        <div class="animate__animated animate__fadeInLeft">
+          <h2 class="text-4xl font-bold text-white mb-6">Let's Create Something Amazing Together</h2>
+          <p class="text-gray-400 mb-8">Ready to transform your online presence? Get in touch and let's discuss how we can help your business grow.</p>
+          
+          <div class="space-y-6">
+            <div class="flex items-center">
+              <div class="w-12 h-12 bg-purple-600/20 rounded-full flex items-center justify-center mr-4">
+                <svg class="w-6 h-6 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                </svg>
+              </div>
+              <a href="mailto:contact@example.com" class="text-gray-300 hover:text-white transition-colors">
+                contact@example.com
+              </a>
+            </div>
+
+            <div class="flex items-center">
+              <div class="w-12 h-12 bg-purple-600/20 rounded-full flex items-center justify-center mr-4">
+                <svg class="w-6 h-6 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+                </svg>
+              </div>
+              <a href="#" class="text-gray-300 hover:text-white transition-colors">
+                Visit My Fiverr Gig
+              </a>
+            </div>
+
+            <div class="pt-8">
+              <h3 class="text-white font-semibold mb-4">Follow Me</h3>
+              <div class="flex space-x-4">
+                <a href="#" class="w-10 h-10 bg-purple-600/20 rounded-full flex items-center justify-center text-purple-500 hover:bg-purple-600 hover:text-white transition-colors">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                  </svg>
+                </a>
+                <a href="#" class="w-10 h-10 bg-purple-600/20 rounded-full flex items-center justify-center text-purple-500 hover:bg-purple-600 hover:text-white transition-colors">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"/>
+                  </svg>
+                </a>
+                <a href="#" class="w-10 h-10 bg-purple-600/20 rounded-full flex items-center justify-center text-purple-500 hover:bg-purple-600 hover:text-white transition-colors">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-2 16h-2v-6h2v6zM9 9.109c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zM17 16h-2v-3.158c0-.674-.616-1.842-2-1.842s-2 1.168-2 1.842V16h-2v-6h2v1.183c.391-.7 1.49-1.464 2.5-1.464 2.316 0 3.5 1.562 3.5 3.591V16z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="animate__animated animate__fadeInRight">
+          <form id="contactForm" class="space-y-6">
+            <div>
+              <label for="name" class="block text-sm font-medium text-gray-300">Name</label>
+              <input type="text" id="name" name="name" class="mt-1 block w-full rounded-lg bg-neutral-800 border-transparent focus:border-purple-500 focus:ring-purple-500 text-white">
+            </div>
+
+            <div>
+              <label for="email" class="block text-sm font-medium text-gray-300">Email</label>
+              <input type="email" id="email" name="email" class="mt-1 block w-full rounded-lg bg-neutral-800 border-transparent focus:border-purple-500 focus:ring-purple-500 text-white">
+            </div>
+
+            <div>
+              <label for="project" class="block text-sm font-medium text-gray-300">Project Type</label>
+              <select id="project" name="project" class="mt-1 block w-full rounded-lg bg-neutral-800 border-transparent focus:border-purple-500 focus:ring-purple-500 text-white">
+                <option>Website Design</option>
+                <option>E-commerce Development</option>
+                <option>Website Redesign</option>
+                <option>Custom Project</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="message" class="block text-sm font-medium text-gray-300">Message</label>
+              <textarea id="message" name="message" rows="4" class="mt-1 block w-full rounded-lg bg-neutral-800 border-transparent focus:border-purple-500 focus:ring-purple-500 text-white"></textarea>
+            </div>
+
+            <button type="submit" class="w-full py-3 px-6 bg-gradient-to-r from-purple-600 to-blue-600 text-white font-semibold rounded-lg hover:from-purple-700 hover:to-blue-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-neutral-900 transition-colors">
+              Let's Make It Happen
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+</htmlCode></element><element id="2dde1739-a71f-496a-a32d-d159b41d07cf" data-section-id="2dde1739-a71f-496a-a32d-d159b41d07cf">
+
+<htmlCode>
+<div id="root">
+  <footer id="footer" class="bg-neutral-900 text-gray-400">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Main Footer Content -->
+      <div class="py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
+        <!-- Brand Column -->
+        <div class="col-span-1 md:col-span-2">
+          <h3 class="text-2xl font-bold text-white mb-4">DesignPro</h3>
+          <p class="mb-6 max-w-md">Transforming businesses through strategic design and flawless execution. Your partner in digital success.</p>
+          <div class="flex space-x-4">
+            <a href="#" class="hover:text-white transition-colors">
+              <span class="sr-only">Facebook</span>
+              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd"/>
+              </svg>
+            </a>
+            <a href="#" class="hover:text-white transition-colors">
+              <span class="sr-only">Twitter</span>
+              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"/>
+              </svg>
+            </a>
+            <a href="#" class="hover:text-white transition-colors">
+              <span class="sr-only">LinkedIn</span>
+              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                <path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clip-rule="evenodd"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+          <ul class="space-y-2">
+            <li><a href="#services" class="hover:text-white transition-colors">Services</a></li>
+            <li><a href="#portfolio" class="hover:text-white transition-colors">Portfolio</a></li>
+            <li><a href="#process" class="hover:text-white transition-colors">Process</a></li>
+            <li><a href="#pricing" class="hover:text-white transition-colors">Pricing</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div>
+          <h4 class="text-white font-semibold mb-4">Contact</h4>
+          <ul class="space-y-2">
+            <li>
+              <a href="mailto:contact@example.com" class="hover:text-white transition-colors">
+                contact@example.com
+              </a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-white transition-colors">
+                Fiverr Profile
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="border-t border-neutral-800 py-6 text-center">
+        <p class="text-sm">
+          © 2024 DesignPro. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+</div>
+</htmlCode></element>
+            <div id="page_complete">
+            <script>
+                console.log('Page complete');
+            </script>
+            </body>
+            </html>
+          
